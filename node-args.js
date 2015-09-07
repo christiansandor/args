@@ -9,7 +9,7 @@ module.exports = exports = (function () {
         if (full_param.test(e)) obj[prev = e.replace(full_param, '$1')] = parse(e.replace(full_param, '$3')) || true;
         else if (param.test(e)) {
             if ((e = e.replace(param, '$1')).length > 1) {
-                e.slice(1).split('').map(function (key) { obj[key] = true; });
+                e.split('').map(function (key) { obj[key] = true; });
                 prev = null;
             } else obj[prev = e] = true;
         } else if (prev) {
