@@ -19,7 +19,17 @@ Call node as you wish,
 > node my.js -t -abc -p no some additional data 2 &#45;&#45;paramis nice &#45;&#45;andanother=1
 
 So you will get:
-> var args = { _: ['node', node file path], additional: ['some', 'additional', 'data', 2], t: true, a: true, b: true, c: true, p: 'no', paramis: 'nice', andanother: 1 };
+> var args = {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_: ['node', node file path],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;additional: ['some', 'additional', 'data', 2],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;t: true,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a: true,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;b: true,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;c: true,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p: 'no',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;paramis: 'nice',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;andanother: 1<br>
+};
 
 Yay.
 
