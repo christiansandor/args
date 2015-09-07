@@ -1,0 +1,23 @@
+{
+  "name": "node-args",
+  "version": "1.0.01",
+  "description": "Most minimalistic parameter processor for node.",
+  "main": "node-args.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christiansandor/args"
+  },
+  "keywords": [
+    "node-args",
+    "arg",
+    "argv",
+    "args",
+    "argument",
+    "arguments",
+    "parameter",
+    "parameters"
+  ],
+  "author": "Sándor Krisztián",
+  "license": "MIT"
+}
