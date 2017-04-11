@@ -21,7 +21,7 @@ No other options needed. *If you need more features, use [commander](https://www
 
 Call node as you wish,
 ```
-node my.js -t -abc -p no some additional data 2 &#45;&#45;paramis nice &#45;&#45;andanother=1
+node my.js -t -abc -p no some additional data 2 --paramis nice --andanother=1
 ```
 
 So you will get:
