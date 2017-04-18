@@ -1,9 +1,13 @@
 {
   "name": "node-args",
-  "version": "1.0.02",
+  "version": "2.0.0",
   "description": "Most minimalistic parameter processor for node.",
-  "main": "node-args.js",
-  "scripts": {},
+  "main": "dest/index.js",
+  "scripts": {
+    "build:src": "node ./node_modules/typescript/lib/tsc.js -p tsconfig.json",
+    "build:tests": "node ./node_modules/typescript/lib/tsc.js -p tsconfig.tests.json",
+    "test": "npm run build:tests; ./node_modules/mocha/bin/mocha dest/node-args.spec.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/christiansandor/args"
@@ -19,5 +23,14 @@
     "parameters"
   ],
   "author": "Sándor Krisztián",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^3.5.1",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.13",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "typescript": "^2.2.2",
+    "uglify-js": "^2.8.22"
+  }
 }

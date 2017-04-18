@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "outDir": "dest",
+        "sourceMap": true
+    },
+    "files": [
+        "src/index.ts",
+        "src/node-args.ts",
+        "src/node-args.spec.ts"
+    ]
+}

@@ -1,6 +1,5 @@
 # Args
-The most minimalistic parameter processor for node.
-Really.
+The most minimalistic parameter processor for node. Really.
 
 ## Usage
 Couldn't be simpler, just install it like:
@@ -17,28 +16,42 @@ var args = require('node-args');
 ### You're done.
 No other options needed. *If you need more features, use [commander](https://www.npmjs.com/package/commander) or whatever else you fancy.*
 
-&nbsp;&nbsp;
+### Call node with
+- your named parameters prefixed with **--**
+- your shorthand parameters prefixed with **-** (with multiple
+  parameters in mind like `-ab = -a -b`)
+- your parameters and assigned values separated with a
+**space** or an **equals** sign
 
-Call node as you wish,
 ```
-node my.js -t -abc -p no some additional data 2 --paramis nice --andanother=1
+node my.js -t -ab=2 -c false -p no some additional data 2 --argsis awesome --another=1
 ```
 
 So you will get:
 ```
-var args = {
+{
     _: ['node', node file path],
     additional: ['some', 'additional', 'data', 2],
     t: true,
-    a: true,
-    b: true,
-    c: true,
+    a: 2,
+    b: 2,
+    c: false,
     p: 'no',
-    paramis: 'nice',
-    andanother: 1
+    argsis: 'awesome',
+    another: 1
 };
 ```
 
 Yay.
 
-*Side note: it's only 22 lines uncompressed, and 1 line minified WOW.*
+*Side note: It's build upon TypeScript and tested thoroughly.*
+
+## Build
+The source files are in the *src* folder, and the available
+scripts are
+- `npm run build:src` to build without tests
+- `npm run build:tests` to build with tests
+- `npm test` to run tests
+
+Please do contribute if you find a better, faster or easier way
+to process arguments.
