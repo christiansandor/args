@@ -1,4 +1,4 @@
-interface Args {
+export interface Args {
     _ : Array<string>;
     additional: Array<string|number>;
     [others: string]: string|number|boolean|Array<string|number>;
