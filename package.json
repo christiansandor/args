@@ -1,6 +1,6 @@
 {
   "name": "node-args",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "Most minimalistic parameter processor for node.",
   "main": "index.js",
   "scripts": {

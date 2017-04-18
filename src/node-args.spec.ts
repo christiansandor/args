@@ -38,4 +38,14 @@ describe('Node Args module', function () {
         expect(obj).to.have.deep.property('g', false);
         expect(obj).to.have.deep.property('h', 'something');
     });
+
+    it('Should handle wrong values', function () {
+        const argv = ['a', 'b', '-', 'c', '--', '-', 'd', '-g', '--'];
+        const obj = args(argv);
+
+        expect(obj).to.exist;
+        expect(Object.keys(obj)).to.be.deep.equal(['_', 'additional', 'g']);
+        expect(obj).to.have.deep.property('additional').that.deep.equals(['c', 'd']);
+        expect(obj).to.have.deep.property('g', true);
+    });
 });
