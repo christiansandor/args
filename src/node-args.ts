@@ -56,4 +56,4 @@ function getArgs(argv : Array<string>) : Args {
     return args;
 }
 
-export default getArgs;
+export {getArgs as args};

@@ -7,7 +7,6 @@
         "sourceMap": true
     },
     "files": [
-        "src/index.ts",
         "src/node-args.ts",
         "src/node-args.spec.ts"
     ]

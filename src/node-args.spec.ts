@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import {default as args} from './node-args';
+import {args} from './node-args';
 
 describe('Node Args module', function () {
     it('Should get default values', function () {

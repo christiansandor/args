@@ -47,5 +47,5 @@ function getArgs(argv) {
     }
     return args;
 }
-exports.default = getArgs;
+exports.args = getArgs;
 //# sourceMappingURL=node-args.js.map

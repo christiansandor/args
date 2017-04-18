@@ -1,8 +1,8 @@
 {
   "name": "node-args",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Most minimalistic parameter processor for node.",
-  "main": "dest/index.js",
+  "main": "index.js",
   "scripts": {
     "build:src": "node ./node_modules/typescript/lib/tsc.js -p tsconfig.json",
     "build:tests": "node ./node_modules/typescript/lib/tsc.js -p tsconfig.tests.json",
