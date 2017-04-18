@@ -145,3 +145,4 @@ dest/node-args.spec.js
 dest/node-args.spec.js.map
 .coveralls.yml
 coverageconfig.json
+publish.js
