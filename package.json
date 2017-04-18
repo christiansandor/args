@@ -1,12 +1,13 @@
 {
   "name": "node-args",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Most minimalistic parameter processor for node.",
   "main": "index.js",
   "scripts": {
     "build:src": "node ./node_modules/typescript/lib/tsc.js -p tsconfig.json",
     "build:tests": "node ./node_modules/typescript/lib/tsc.js -p tsconfig.tests.json",
-    "test": "npm run build:tests; ./node_modules/mocha/bin/mocha dest/node-args.spec.js"
+    "test": "npm run build:tests; ./node_modules/mocha/bin/mocha dest/node-args.spec.js",
+    "test-travis": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./dest/node-args.spec.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
     "@types/mocha": "^2.2.41",
     "@types/node": "^7.0.13",
     "chai": "^3.5.0",
+    "coveralls": "^2.13.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "typescript": "^2.2.2"
   }

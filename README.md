@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/christiansandor/args.svg?branch=master)](https://travis-ci.org/christiansandor/args)
+[![Coverage Status](https://coveralls.io/repos/github/christiansandor/args/badge.svg?branch=master)](https://coveralls.io/github/christiansandor/args?branch=master)
+
 # Args
 The most minimalistic parameter processor for node. Really.
 
