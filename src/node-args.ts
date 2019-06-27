@@ -53,6 +53,8 @@ function getArgs(argv : Array<string>) : Args {
         parse(argv[i]);
     }
 
+    if (prev.length) addValueToPrev('true');
+
     return args;
 }
 
