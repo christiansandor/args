@@ -45,6 +45,8 @@ function getArgs(argv) {
     for (var i_1 = 2, l = argv.length; i_1 < l; i_1++) {
         parse(argv[i_1]);
     }
+    if (prev.length)
+        addValueToPrev('true');
     return args;
 }
 exports.args = getArgs;
